@@ -10,7 +10,7 @@ It will be very helpful if you make an adaptive design and have more than one de
 
 **Pixel Glass** just lets you control your page’s `<body>` opacity. When the `<body>` becomes semi-transparent, you can see designs through it.
 
-Try it on the [**demo page**](https://makehtml.github.io/pixel-glass-js/).
+Try it on the [**demo page**](https://makehtml.github.io/pixel-glass/).
 
 ## How to use Pixel Glass in your project?
 
@@ -62,7 +62,7 @@ Try it on the [**demo page**](https://makehtml.github.io/pixel-glass-js/).
 
 **Pixel Glass** просто управляет прозрачностью элемента `<body>`. Когда `<body>` становится полупрозрачным, через него становятся видны макеты, заданные фоном для `<html>`.
 
-Посмотрите в действии на [**демо-странице**](https://makehtml.github.io/pixel-glass-js/).
+Посмотрите в действии на [**демо-странице**](https://makehtml.github.io/pixel-glass/).
 
 ## Как использовать Pixel Glass в своём проекте?
 

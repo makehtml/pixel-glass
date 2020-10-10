@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yoksel/pixel-glass-js.git"
+    "url": "https://github.com/makehtml/pixel-glass-js.git"
   },
   "author": "yoksel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yoksel/pixel-glass-js/issues"
+    "url": "https://github.com/makehtml/pixel-glass-js/issues"
   },
-  "homepage": "https://yoksel.github.io/pixel-glass-js/"
+  "homepage": "https://makehtml.github.io/pixel-glass-js/"
 }

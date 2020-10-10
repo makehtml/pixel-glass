@@ -106,32 +106,26 @@
               Place your mock-ups into <code class="code code--inline">img</code> (or any other) folder of your project.
             </li>
             <li> Add this code into <code class="code code--inline">&lt;head></code> element of your page:
-<pre><code class="code code--block"><span class="code__comment">&lt;!-- Pixel Glass --></span>
+<pre><code class="code code--block">
 &lt;style>
   HTML {
     background-repeat: no-repeat;
     background-position:  50% 0;
-    <span class="code__comment">/* Mobile layout by default */</span>
-    background-image: url( <mark>"img/320.png"</mark> );
+    background-image: url(<mark>"pp/Index-Mobile.jpg"</mark>);
   }
-  <span class="code__comment">/* Tablet */</span>
-  @media ( <mark>min-width: 760px</mark> ) {
+  @media (<mark>min-width: 760px</mark>) {
     HTML {
-      <span class="code__comment">/* Tablet layout */</span>
-      background-image: url( <mark>"img/760.png"</mark> );
+      background-image: url(<mark>"pp/Index-Tablet.jpg"</mark>);
     }
   }
-  <span class="code__comment">/* Desktop */</span>
-  @media ( <mark>min-width: 960px</mark> ) {
+  @media (<mark>min-width: 960px</mark>) {
     HTML {
-      <span class="code__comment">/* Desktop layout */</span>
-      background-image: url( <mark>"img/960.png"</mark> );
+      background-image: url(<mark>"pp/Index-Desktop.jpg"</mark>);
     }
   }
 &lt;/style>
 &lt;link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
 &lt;script src="../node_modules/pixel-glass/script.js">&lt;/script>
-<span class="code__comment">&lt;!-- // Pixel Glass --></span>
 </code></pre>
 
             Edit highlighted text to make this code fit your project: change media queries or add yours, change image URLs to actual files.
@@ -144,7 +138,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__links">
-        <a href="https://github.com/yoksel/pixel-glass-js/">Project on GitHub</a>
+        <a href="https://github.com/makehtml/pixel-glass-js/">Project on GitHub</a>
         <a href="https://twitter.com/yoksel_en">@yoksel_en</a>
       </div>
     </footer>

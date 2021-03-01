@@ -85,8 +85,8 @@ function pixelGlass() {
     type: 'number',
     setAttr: 'style',
     attrs: {
-      min: -50,
-      max: 50,
+      min: -250,
+      max: 250,
       step: 1,
       tabindex: 3,
     }

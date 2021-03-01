@@ -1,6 +1,6 @@
 {
   "name": "pixel-glass",
-  "version": "1.0.13",
+  "version": "1.1.0",
   "description": "Tiny JS library for visual checking markup",
   "main": "script.js",
   "style": "styles.css",
@@ -9,12 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/makehtml/pixel-glass-js.git"
+    "url": "https://github.com/makehtml/pixel-glass.git"
   },
   "author": "yoksel",
+  "contributors": ["makehtml"],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/makehtml/pixel-glass-js/issues"
+    "url": "https://github.com/makehtml/pixel-glass/issues"
   },
-  "homepage": "https://makehtml.github.io/pixel-glass-js/"
+  "homepage": "https://makehtml.github.io/pixel-glass/"
 }

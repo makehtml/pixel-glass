@@ -12,10 +12,13 @@ function pixelGlass() {
   var filtersList = ['none', 'invert'];
   var statesList = ['off', 'on'];
 
+  const htmlEl = document.querySelector('html');
+
   var currents = {
     state: getCurrent('state', statesList[1]),
     filter: getCurrent('filter', filtersList[0]),
-    opacity: getCurrent('opacity', 0.5)
+    opacity: getCurrent('opacity', 0.5),
+    positionY: getCurrent('positionY', 0)
   };
 
   var targets = {
@@ -76,6 +79,19 @@ function pixelGlass() {
     }
   };
 
+  // PositionY range params
+  var paramsPositionY = {
+    itemName: 'PositionY',
+    type: 'number',
+    setAttr: 'style',
+    attrs: {
+      min: -50,
+      max: 50,
+      step: 1,
+      tabindex: 3,
+    }
+  };
+
   //---------------------------------------------
 
   init();
@@ -127,6 +143,7 @@ function pixelGlass() {
     createButton(paramsStates);
     createButton(paramsFilters);
     createInputNumber(paramsOpacity);
+    createInputPosition(paramsPositionY);
 
     createDragButton();
   }
@@ -230,6 +247,43 @@ function pixelGlass() {
     input.oninput = function() {
       if (setAttr === 'style') {
         params.target.elem.style[itemName] = this.value;
+        saveLocalStorage(itemName, this.value);
+      }
+    };
+  }
+
+  //---------------------------------------------
+
+  function createInputPosition(params) {
+    var itemName = params.itemName;
+    var attrs = params.attrs;
+    var type = params.type;
+    var setAttr = params.setAttr;
+    var canDisableAll = params.canDisableAll;
+
+    var id = itemName;
+    var input = doc.createElement('input');
+    setClasses( input, [
+      panelClass + '__control',
+      panelClass + '__control--' + type
+    ]);
+    input.setAttribute('type', type);
+    input.setAttribute('id', id);
+
+    for (var attr in attrs) {
+      input.setAttribute(attr, attrs[attr]);
+    }
+    input.setAttribute('value', 0);
+
+    if ( !canDisableAll ) {
+      canBeDisabled.push(input);
+    }
+
+    controlsPanel.appendChild(input);
+
+    input.oninput = function() {
+      if (setAttr === 'style') {
+        htmlEl.style.backgroundPositionY = `${this.value}px`;
         saveLocalStorage(itemName, this.value);
       }
     };

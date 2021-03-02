@@ -81,12 +81,12 @@ function pixelGlass() {
 
   // PositionY range params
   var paramsPositionY = {
-    itemName: 'PositionY',
+    itemName: 'positionY',
     type: 'number',
     setAttr: 'style',
     attrs: {
-      min: -250,
-      max: 250,
+      min: -550,
+      max: 550,
       step: 1,
       tabindex: 3,
     }
